@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+body, html {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+nav {
+    height: 12%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    column-gap: 10px;
+    background-color: goldenrod;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.opcoes, .login{
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+}
+
+nav h1 {
+    font-size: 34px;
+    color: white;
+}
+
+nav h2 {
+    font-size: 28px;
+    color: white;
+}
+
+nav h2:hover{
+    color: yellow;
+}
+
+main {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+main form {
+    padding: 20px 40px;
+    border: 1px solid black;
+}
+
+.conteudo1{
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+.teste{
+    color: black;
+    font-size: 25px;
+}
+h3{
+    color: goldenrod;
+}
+.tarefinhas{
+    margin: 15px;
+    border: 2px black solid;
+}

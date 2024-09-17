@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+
+{% block conteudo %}
+
+<div>
+    <h1>Tarefas:</h1>
+    <div class="teste">
+        {% for tarefa in tarefas %}
+            <div class="tarefinhas">
+                <h3>{{tarefa['titulo']}}</h3>
+                <h4>{{tarefa['conteudo']}}</h4>
+                <form action="{{ url_for('delete_user', id=tarefa['id']) }}" method="post">
+                    <button type="submit">apagar</button>
+                </form>
+            </div>
+        {% endfor %}
+    </div> 
+    <h2><a href="{{url_for('create_tarefa')}}">criar tarefas</a></h2>
+</div>
+
+<h2><a href="{{url_for('index')}}">Pagina Inicial</a></h2>
+{% endblock %}
