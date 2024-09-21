@@ -6,6 +6,8 @@ CRIAR AQUIVO ".env" E PREENCHER COM ISSO:
 EMAILUSER = 'usuário do mail trap ou email de sua preferencia' 
 EMAILSENHA = 'senha do mail trap ou senha/senha de app do seu email'
 
+A PORTA E O SERVER DO EMAIL ESTÃO PARA UM TESTE COM GMAIL, CASO FOR UTILIZAR OUTRA PLATAFORMA SUBISTITUIR O SERVER E A PORTA.
+
 TER XAMPP E MYSQL NO SEU PC
 
 AGORA SEJA FELIZ COM O SITE :)
