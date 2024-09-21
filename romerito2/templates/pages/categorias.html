@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block conteudo %}
+    <h1>Escolha a Categoria da Tarefa</h1>
+    <form  action="{{url_for('escolher_categoria')}}" method="POST">
+        <label>
+            <input type="radio" name="categorias" value="tarefas de casa" required> Tarefas de Casa
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="categorias" value="tarefas da escola" required> Tarefas da Escola
+        </label>
+        <br>
+        <button type="submit">Continuar</button>
+    </form>
+{% endblock %}

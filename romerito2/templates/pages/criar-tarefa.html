@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block conteudo %}
+<form action="{{url_for('create_tarefa')}}" method="post">
+    <label for="name"> titulo da tarefa</label> 
+    <input type="name" name="nome" placeholder="Digite o titulo">
+    <label for="texto"> conteudo da tarefa</label> 
+    <input type="name" name="conteudo" placeholder="Digite o conteudo">
+    
+    <button>Enviar</button>
+</form>
+{% endblock %}

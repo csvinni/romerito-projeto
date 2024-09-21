@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block navbar %}
+            <div class="opcoes">
+                <a href="{{url_for('index')}}">
+                    <h2>Pagina Inicial</h2>
+                </a>
+            </div>
+            <div class="login">
+                <a href="{{url_for('login')}}">
+                    <h2>login</h2>
+                </a>
+                <a href="{{url_for('register')}}">
+                    <h2>Cadastre-se</h2>
+                </a>
+            </div>
+{% endblock %}  
+
+{% block conteudo %}
+
+<h1>
+    Cadastro
+</h1>  
+<form action="{{url_for('register')}}" method="post">
+    <input type="text" name="email" placeholder="email">
+    <input type="password" name="pass" placeholder="password">
+    <button>Enviar</button>
+</form> 
+
+{% endblock %}

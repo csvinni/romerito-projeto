@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            {% block navbar %}
+            <div class="opcoes">
+                <a href="{{ url_for('index') }}">
+                    <h2>Página Inicial</h2>
+                </a>
+            </div>
+            <div class="escolha">
+                <a href="{{ url_for('ver_tarefa') }}"><h2>Tarefas</h2></a><a href="{{ url_for('create_tarefa') }}"><h2>Cadastrar Tarefa</h2></a>
+            </div>
+            <div class="login">
+                <a href="{{ url_for('logout') }}">
+                    <h2>Logout</h2>
+                </a>
+            </div>
+            {% endblock %}
+        </nav> 
+        <main class="conteudo1">
+            {% block conteudo %}
+                
+            {% endblock %}
+        </main>
+    </div>
+
+</body>
+</html>
